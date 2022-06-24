@@ -1,0 +1,26 @@
+name: 🚀 Deploy on push
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  SFTP-Deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 10
+
+      - name: 📂 Sync files
+        uses: Stiwoz/git-sftp-action@master
+        with:
+          username: ${{ secrets.USERNAME }}
+          server: ${{ secrets.HOST }}
+          ssh_private_key: ${{ secrets.SSH_KEY }}
+          local_path: './*'
+          remote_path: ${{ secrets.PATH }}
+          port: 22
+          args: '-o ConnectTimeout=30'
