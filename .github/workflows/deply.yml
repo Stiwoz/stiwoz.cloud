@@ -17,9 +17,9 @@ jobs:
       - name: 📂 Sync files
         uses: Stiwoz/git-sftp-action@master
         with:
-          username: ${{ secrets.USERNAME }}
-          server: ${{ secrets.HOST }}
-          ssh_private_key: ${{ secrets.SSH_KEY }}
+          username: ${{ env.USERNAME }}
+          server: ${{ env.HOST }}
+          ssh_private_key: ${{ env.SSH_KEY }}
           local_path: './*'
           remote_path: ${{ secrets.PATH }}
           port: 22
