@@ -6,6 +6,7 @@ on:
 
 jobs:
   SFTP-Deploy:
+    environment: VPS
     name: 🎉 Deploy
     runs-on: ubuntu-latest
     steps:
