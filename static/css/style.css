@@ -1,0 +1,74 @@
+@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+
+:root {
+  --app-height: 100%;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  width: 100vw;
+}
+
+body {
+  background: black;
+  position: relative;
+  font-family: 'Favorit', sans-serif;
+  height: 100vh;
+  height: var(--app-height);
+}
+
+svg {
+  width: 100%;
+  display: block;
+  text-align: center;
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: black;
+  pointer-events: none;
+  font-family: 'Lovelo', sans-serif;
+}
+
+#bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, .75);
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+#bottom a {
+  padding: 5px 10px;
+  margin: 0;
+  color: #f0f0f0;
+}
+
+#signature {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  font-family: 'Amoret Script';
+  transform: translate(-20%, -50%);
+  color: #6b6b6b;
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 600px) {
+  #signature {
+    font-size: 2rem;
+    top: 0;
+    transform: translate(-10%, 25%);
+    bottom: unset;
+  }
+}

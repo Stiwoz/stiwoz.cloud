@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Lovelo';
+    src: url('Lovelo-LineBold.eot');
+    src: local('Lovelo Line Bold'), local('Lovelo-LineBold'),
+        url('Lovelo-LineBold.eot?#iefix') format('embedded-opentype'),
+        url('Lovelo-LineBold.woff2') format('woff2'),
+        url('Lovelo-LineBold.woff') format('woff'),
+        url('Lovelo-LineBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lovelo';
+    src: url('Lovelo-LineLight.eot');
+    src: local('Lovelo Line Light'), local('Lovelo-LineLight'),
+        url('Lovelo-LineLight.eot?#iefix') format('embedded-opentype'),
+        url('Lovelo-LineLight.woff2') format('woff2'),
+        url('Lovelo-LineLight.woff') format('woff'),
+        url('Lovelo-LineLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lovelo';
+    src: url('Lovelo-Black.eot');
+    src: local('Lovelo Black'), local('Lovelo-Black'),
+        url('Lovelo-Black.eot?#iefix') format('embedded-opentype'),
+        url('Lovelo-Black.woff2') format('woff2'),
+        url('Lovelo-Black.woff') format('woff'),
+        url('Lovelo-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+

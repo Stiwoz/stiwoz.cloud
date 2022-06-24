@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Amoret Script';
+  src: url('AmoretScript.eot');
+  src: local('The Amoret Collection Script'), local('AmoretScript'),
+    url('AmoretScript.eot?#iefix') format('embedded-opentype'),
+    url('AmoretScript.woff2') format('woff2'),
+    url('AmoretScript.woff') format('woff'),
+    url('AmoretScript.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Amoret Script Alt';
+  src: url('AmoretScriptAlt.eot');
+  src: local('The Amoret Collection Script Alt'), local('AmoretScriptAlt'),
+    url('AmoretScriptAlt.eot?#iefix') format('embedded-opentype'),
+    url('AmoretScriptAlt.woff2') format('woff2'),
+    url('AmoretScriptAlt.woff') format('woff'),
+    url('AmoretScriptAlt.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Amoret Sans';
+  src: url('AmoretSans.eot');
+  src: local('The Amoret Collection Sans'), local('AmoretSans'),
+    url('AmoretSans.eot?#iefix') format('embedded-opentype'),
+    url('AmoretSans.woff2') format('woff2'),
+    url('AmoretSans.woff') format('woff'),
+    url('AmoretSans.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
