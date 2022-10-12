@@ -5,11 +5,11 @@ const animateTrailer = (e, interacting) => {
     y = e.clientY - trailer.offsetHeight / 2;
 
   const keyframes = {
-    transform: `translate(${x}px, ${y}px) scale(${interacting ? 1.5 : 1})`,
+    transform: `translate(${x}px, ${y}px) scale(${interacting ? 1.6 : 1})`,
   };
 
   trailer.animate(keyframes, {
-    duration: 800,
+    duration: 700,
     fill: 'forwards',
   });
 };
