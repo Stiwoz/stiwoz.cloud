@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="./static/fonts/favorit/stylesheet.css">
   <link rel="stylesheet" href="./static/fonts/lovelo/stylesheet.css">
   <link rel="stylesheet" href="./static/css/style.css">
+  <link rel="stylesheet" href="./static/css/mouse.css">
 
   <script>
     (function() {
@@ -93,16 +94,22 @@
   </svg>
 
   <div id="bottom">
-    <a href="https://www.opiquad.it/">Opiquad</a>
-    <a href="https://www.linkedin.com/in/stefano-sanvito/">LinkedIn</a>
-    <a href="https://github.com/Stiwoz/">Github</a>
-    <a href="https://www.instagram.com/stiwoz/">Instagram</a>
+    <a class="interactable" data-type="link" href="https://www.opiquad.it/">Opiquad</a>
+    <a class="interactable" data-type="linkedin" href="https://www.linkedin.com/in/stefano-sanvito/">LinkedIn</a>
+    <a class="interactable" data-type="github" href="https://github.com/Stiwoz/">Github</a>
+    <a class="interactable" data-type="instagram" href="https://www.instagram.com/stiwoz/">Instagram</a>
   </div>
 
   <div id="signature">by Stefano Sanvito</div>
 
+<div id="trailer">
+  <i id="trailer-icon" class="fa-solid"></i>
+</div>
+
   <script src="./static/js/glsl.js"></script>
   <script type="module" src="./static/js/main.mjs" defer></script>
+  <script type="module" src="./static/js/mouse.js" defer></script>
+  <script src="https://kit.fontawesome.com/944eb371a4.js" defer></script>
 </body>
 
 </html>
