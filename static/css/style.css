@@ -34,6 +34,14 @@ svg {
   font-family: 'Lovelo', sans-serif;
 }
 
+svg text{
+  dominant-baseline: central;
+}
+
+.webkit svg text {
+  dominant-baseline: middle;
+}
+
 #bottom {
   display: flex;
   flex-direction: row;
