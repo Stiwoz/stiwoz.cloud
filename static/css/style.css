@@ -38,7 +38,7 @@ svg text{
   dominant-baseline: central;
 }
 
-.webkit svg text {
+.webkit:not(.win) svg text {
   dominant-baseline: middle;
 }
 
