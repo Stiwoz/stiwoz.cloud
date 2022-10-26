@@ -1,21 +1,28 @@
 import * as THREE from 'https://cdn.skypack.dev/three@0.132.2/build/three.module.js';
 import { OrbitControls } from 'https://cdn.skypack.dev/three@0.132.2/examples/jsm/controls/OrbitControls.js';
+import { TrackballControls } from 'https://cdn.skypack.dev/three@0.132.2/examples/jsm/controls/TrackballControls.js';
 
 THREE.BufferGeometry.prototype.tripleFace = tripleFace;
 
 let scene = new THREE.Scene();
 scene.background = new THREE.Color(0x000000);
+
 let camera = new THREE.PerspectiveCamera(60, innerWidth / innerHeight, 1, 1000);
 camera.position.set(0, 0, 15);
+
 let renderer = new THREE.WebGLRenderer({
   antialias: true,
 });
-renderer.setSize(innerWidth, innerHeight);
+renderer.setPixelRatio(window.devicePixelRatio);
+renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
-let controls = new OrbitControls(camera, renderer.domElement);
-controls.enablePan = false;
-controls.enableZoom = false;
+let controls = new TrackballControls(camera, renderer.domElement);
+controls.enabled = true;
+controls.rotateSpeed = 2.5;
+controls.noPan = true;
+controls.noZoom = true;
+
 let light = new THREE.DirectionalLight(0xffffff, 1);
 light.position.setScalar(1);
 scene.add(
@@ -91,6 +98,7 @@ window.addEventListener('resize', () => {
   camera.aspect = innerWidth / innerHeight;
   camera.updateProjectionMatrix();
   renderer.setSize(innerWidth, innerHeight);
+  controls.handleResize();
 });
 
 let clock = new THREE.Clock();
@@ -99,6 +107,7 @@ renderer.setAnimationLoop(() => {
   let t = clock.getElapsedTime() * 0.1;
   m.userData.uniforms.time.value = t;
   renderer.render(scene, camera);
+  controls.update();
 });
 
 function tripleFace() {
