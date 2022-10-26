@@ -9,7 +9,7 @@ const animateTrailer = (e, interacting) => {
   };
 
   trailer.animate(keyframes, {
-    duration: 350,
+    duration: 10,
     fill: 'forwards',
   });
 };
