@@ -43,7 +43,7 @@ svg text{
   dominant-baseline: middle;
 }
 
-.gecko svg text {
+.gecko:not(.win) svg text {
   dominant-baseline: mathematical;
 }
 
