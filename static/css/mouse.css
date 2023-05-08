@@ -21,8 +21,8 @@
 	color: #fff;
 }
 
-#trailer-icon .fa-brands,
-#trailer-icon .fab {
+#trailer-icon.fa-brands,
+#trailer-icon.fab {
 	font-family: var(--fa-style-family-brands);
 	font-style: normal;
 }
