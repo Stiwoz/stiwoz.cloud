@@ -21,6 +21,12 @@
 	color: #fff;
 }
 
+#trailer-icon .fa-brands,
+#trailer-icon .fab {
+	font-family: var(--fa-style-family-brands);
+	font-style: normal;
+}
+
 
 /* on mobile hide trailer */
 @media (max-width: 768px) {
