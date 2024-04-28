@@ -3,7 +3,8 @@ name: 🚀 Deploy on push
 on:
   push:
     branches: [main]
-
+  workflow_dispatch:
+  
 jobs:
   SFTP-Deploy:
     name: 🎉 Deploy
